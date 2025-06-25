@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: 'Cairo', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, gold, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  padding: 1rem 2rem;
+  background: gold;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background: white;
+  color: gold;
+  transform: scale(1.05);
+}
+
+#results {
+  margin-top: 2rem;
+  text-align: left;
+  direction: ltr;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.username {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
